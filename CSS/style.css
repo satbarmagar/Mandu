@@ -1,0 +1,428 @@
+/* Navigation Bar */
+.navbar {
+    margin: auto 50px auto 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 10px;
+
+}
+
+li>a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+li>a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+
+}
+
+li>a:hover::after,
+li>a.active-nav::after {
+    width: 100%;
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    display: bold;
+}
+
+h4 {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    display: bold;
+}
+
+h5 {
+    font-family: Montserrat, sans-serif;
+    display: bold;
+}
+
+a{
+    font-family: Montserrat, sans-serif;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+}
+
+
+/*video*/
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden; /* hide the extra video content */
+ }
+ .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* zoom in to cover the container */
+ }
+ @media (max-width: 768px) {
+    .video-container {
+       padding-bottom: 230%; /* 4:3 aspect ratio */
+    }
+ }
+
+#About{
+    margin: 50px 50px 80px 50px;   
+
+}
+
+.Noodles{
+    float: right;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.info-damu{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text{
+     margin: 100px 50px 80px 20px;   
+
+}
+
+.kath{
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 45%;
+    overflow: hidden;
+}
+
+.kath img{
+    position:absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .kath{
+        padding-bottom: 180%;
+    }
+}
+.topic{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-family: 'Poppins' 'Noto Sans' sans-serif;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    color: #fafafa;
+}
+.topics{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-family: 'Poppins' sans-serif;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    color: #fafafa;
+}
+
+
+
+
+/*Menu*/
+
+.menu {
+    position: relative;
+    margin-top: 60px;
+}
+
+.menu-centered {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fafafa;
+}
+
+
+.menus {
+    text-align: center;
+}
+
+.menu-type {
+    margin: 0.9em;
+
+}
+
+.btn-d{
+    border-radius: 29px; 
+    border: 2px solid #081F2D; 
+    font-size: 15px; 
+    padding: 15px 45px; 
+    margin: 3em;
+    cursor: pointer; 
+    transition: 0.3s; 
+    background-color: white; 
+    color: #081F2D; 
+    border-color: #081F2D; 
+    }
+    
+.btn-d:hover{ 
+    background-color: #081f2d; 
+    color: white; 
+    transition: 0.3s; 
+   }
+
+/* layout */
+
+.footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Reservation*/
+.reserve-centered {
+    color: #fafafa;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.Reserve{
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 45%;
+    overflow: hidden;
+}
+
+.Reserve img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .Reserve{
+        padding-bottom: 180%;
+    }
+}
+
+
+
+/*Contact*/
+
+.Contact{
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 45%;
+    overflow: hidden;
+}
+.Contact img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .Contact{
+        padding-bottom: 180%;
+    }
+}
+
+.Details {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.centered {
+    color: #fafafa;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.space{
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer*/
+footer {
+    color: white;
+    height: 40px;
+    background: black;
+    text-align: center;
+    font-size: 12px;
+}
+
+.contact-area,
+footer {
+    background: #1A1E25;
+    color: #868c96;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*Social*/
+.icon {
+    height: 20px;
+    width: 20px;
+
+}
+
+.footer-link {
+    margin: 0.6em;
+}
+
+
+
+/* Calendar */
+
+* {box-sizing: border-box;}
+.card-header * {list-style-type: none;}
+
+.required:after{
+    content:"*";
+    font-weight:bold;
+    color: red;
+    margin-left: 5px;
+}
+
+.card-header {
+    padding: 50px 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card-header ul li {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.days {
+    padding: 10px 0;
+}
+
+.badge1 {
+    position:relative;
+}
+.badge1[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: -0.5px;
+    right: -0.5px;
+    font-size: .7em;
+    background: red;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+@media screen and (max-width:720px) {
+
+    .weekdays td,
+    .days td {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .weekdays td,
+    .days td {
+        width: 12.5%;
+    }
+
+    .days td .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    .weekdays td,
+    .days td {
+        width: 12.2%;
+    }
+}
+
+
+
+
+
+
+
+    
